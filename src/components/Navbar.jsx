@@ -30,25 +30,38 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Item 1</a>
-            </li>
-           
-            <li>
-              <a>Item 3</a>
-            </li>
+            
+            <Link to="" className="hover:text-gray-200">
+            <a>Save More On App </a>
+          </Link>
+            <Link to="/become-seller" className="hover:text-gray-200">
+            <a>Became A Seller</a>
+          </Link>
+            <Link to="/help-support" className="hover:text-gray-200">
+            <a>Help & Support</a>
+          </Link>
+            <Link to="/login" className="hover:text-gray-200">
+            <a>Log In</a>
+          </Link>
+            <Link to="/register" className="hover:text-gray-200">
+            <a>Sign Up</a>
+          </Link>
+        
+          <Link to="" className="hover:text-gray-200">
+            <a>Language</a>
+          </Link>
           </ul>
         </div>
         <div className="flex items-center gap-2">
           {/* <img className="h-8 w-8" src={logo} alt="Logo" /> */}
-          <span className="text-3xl text-white"><IoLogoDesignernews /></span>
+          <span className="lg:text-3xl text-xl text-white"><IoLogoDesignernews /></span>
           <p className="text-2xl font-bold text-white">Zarad</p>
         </div>
 
 
         {/* Search Input */}
-        <div className="flex items-center gap-4 ml-20">
-            <input  type="text" placeholder="Search in Zarad" className="input input-bordered w-64 lg:w-120 h-10 focus:outline-none focus:ring-blue-500" />
+        <div className="flex items-center gap-4 lg:ml-20 ml-2">
+            <input  type="text" placeholder="Search in Zarad" className="input input-bordered w-40 lg:w-120 h-10 focus:outline-none focus:ring-blue-500" />
 
             <Link to="/cart" className="btn"><FaShoppingCart /></Link>
         </div>
@@ -56,7 +69,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-5 text-white">
             <Link to="" className="hover:text-gray-200">
             <a>Save More On App </a>
