@@ -1,10 +1,12 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router";
+import { FaShoppingCart } from "react-icons/fa";
+import { IoLogoDesignernews } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm my-10">
+    <div className="navbar bg-orange-500 shadow-sm py-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,58 +33,51 @@ const Navbar = () => {
             <li>
               <a>Item 1</a>
             </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
+           
             <li>
               <a>Item 3</a>
             </li>
           </ul>
         </div>
         <div className="flex items-center gap-2">
-          <img className="h-8 w-8" src={logo} alt="Logo" />
-          <p className="text-2xl font-bold">Zarad</p>
+          {/* <img className="h-8 w-8" src={logo} alt="Logo" /> */}
+          <span className="text-3xl text-white"><IoLogoDesignernews /></span>
+          <p className="text-2xl font-bold text-white">Zarad</p>
         </div>
-        {/* Search Input */}
-        <div className="">
-            <input type="text" placeholder="Search" className="input input-bordered w-64 lg:w-auto" />
 
-            <Link className="btn"></Link>
+
+        {/* Search Input */}
+        <div className="flex items-center gap-4 ml-20">
+            <input  type="text" placeholder="Search in Zarad" className="input input-bordered w-64 lg:w-120 h-10 focus:outline-none focus:ring-blue-500" />
+
+            <Link to="/cart" className="btn"><FaShoppingCart /></Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2 bg-base-100 w-40 z-1">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+        
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <ul className="menu menu-horizontal px-1 gap-5 text-white">
+            <Link to="" className="hover:text-gray-200">
+            <a>Save More On App </a>
+          </Link>
+            <Link to="/become-seller" className="hover:text-gray-200">
+            <a>Became A Seller</a>
+          </Link>
+            <Link to="/help-support" className="hover:text-gray-200">
+            <a>Help & Support</a>
+          </Link>
+            <Link to="/login" className="hover:text-gray-200">
+            <a>Log In</a>
+          </Link>
+            <Link to="/register" className="hover:text-gray-200">
+            <a>Sign Up</a>
+          </Link>
+        
+          <Link to="" className="hover:text-gray-200">
+            <a>Language</a>
+          </Link>
+        </ul>
       </div>
     </div>
   );
