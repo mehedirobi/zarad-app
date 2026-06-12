@@ -8,21 +8,21 @@ import "swiper/css/navigation";
 const slides = [
   {
     id: 1,
-    title: "Mega Electronics Sale",
+    title: "Summer Flash Sell",
     subtitle: "Up to 50% Off",
     image:
       "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
   },
   {
     id: 2,
-    title: "Latest Smartphones",
+    title: "World Cup Jersey Hub",
     subtitle: "New Arrivals",
     image:
       "https://images.unsplash.com/photo-1598327105666-5b89351aff97",
   },
   {
     id: 3,
-    title: "Gaming Collection",
+    title: "Rainy Days Deal",
     subtitle: "Level Up Your Setup",
     image:
       "https://images.unsplash.com/photo-1542751371-adc38448a05e",
