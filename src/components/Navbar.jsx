@@ -61,8 +61,8 @@ const Navbar = () => {
 
 
         {/* Search Input */}
-        <div className="flex items-center gap-4 lg:ml-20 ml-2">
-            <input  type="text" placeholder="Search in Zarad" className="input input-bordered w-40 lg:w-120 h-10 focus:outline-none focus:ring-blue-500" />
+        <div className="flex items-center gap-4 lg:ml-10 ml-2">
+            <input  type="text" placeholder="Search in Zarad" className="input input-bordered w-40 lg:w-100 h-10 focus:outline-none focus:ring-blue-500" />
 
             <Link to="/cart" className="btn"><FaShoppingCart /></Link>
         </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
         
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-5 text-white">
+        <ul className="menu menu-horizontal px-1 gap-5 text-white font-semibold">
             <Link to="" className="hover:text-gray-200">
             <a>Save More On App </a>
           </Link>
