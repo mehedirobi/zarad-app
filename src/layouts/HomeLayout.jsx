@@ -7,7 +7,10 @@ import Home from '../pages/Home';
 const HomeLayout = () => {
     return (
         <div>
+            <header className=''>
             <Navbar></Navbar>
+            </header>
+            
 
             <Outlet>
                 <Home></Home>
